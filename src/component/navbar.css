@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #f0f0f0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.navbar.dark {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.navbar.light {
+    background-color: #ffffff;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.logo a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+.theme-btn {
+    padding: 6px 12px;
+    border: none;
+    background: #4caf50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

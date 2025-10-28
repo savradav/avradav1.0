@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+}
+
+/* Centers content with a maximum width and padding */
+/* Centers content with a maximum width and padding */
+.centered {
+  margin: auto;
+  padding: 20px;
+}
+/* Style for buttons to indicate they are clickable */
+button {
+  cursor: pointer;
+}
+
+.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+/* Default styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  /* Inherits the background color from the parent element */
+  background-color: inherit;
+  border-bottom: 1px solid gray;
+  /* Uses the current text color for the border */
+  color: inherit;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
