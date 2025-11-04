@@ -3,7 +3,7 @@ import { db } from '../components/firebase';
 import { collection, getDocs, updateDoc, doc, query, limit, addDoc } from 'firebase/firestore';
 import { FaHeart, FaComment, FaUserPlus, FaCheckCircle } from 'react-icons/fa';
 
-export default function ForYouPage() {
+export default function ForYou() {
     const [posts, setPosts] = useState([]);
 
 // Container for centering and max width

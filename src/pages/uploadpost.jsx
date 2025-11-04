@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const MAX_FILE_SIZE_MB = 50; // Maximum file size in MB
-import { storage, db, auth } from '../firebase';
+import { storage, db, auth } from '../component/firebase';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 

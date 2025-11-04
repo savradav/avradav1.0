@@ -1,43 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import React, { useContext } from 'react';
-import { ThemeContext } from '../App'
-import "./Navbar.css";
-import { LABELS } from "../constants/labels";
 
-const BRAND_NAME = "Avradav Revival";
+function Navbar() {
+  return (
+    <nav style={styles.navbar}>
+      <h2 style={styles.logo}>Avradav Revival</h2>
+      <div style={styles.links}>
+        <Link to="/" style={styles.link}>For You</Link>
+        <Link to="/profile" style={styles.link}>Profile</Link>
+        <Link to="/upload" style={styles.link}>Upload</Link>
+        <Link to="/testimony" style={styles.link}>Testimony</Link>
+        <Link to="/signin" style={styles.link}>Sign In</Link>
+        <Link to="/signup" style={styles.link}>Sign Up</Link>
+      </div>
+    </nav>
+  );
+}
 
-const Navbar = () => {
-    const [darkMode, setDarkMode] = React.useState(false);
-
-    const toggleTheme = () => setDarkMode((prev) => !prev);
-
-    const navbarClass = `navbar ${darkMode ? "dark" : "light"}`;
-    const navLinks = [
-        { path: "/foryou", label: "For You" }, // "foryou": Suppress unknown word warning
-        { path: "/testimony", label: "Testimony" },
-        { path: "/upload", label: "Upload" },
-        { path: "/profile", label: "Profile" },
-        { path: "/settings", label: "Settings" },
-    ];
-    
-     <Link to="/terms">Terms</Link>
-
-    return (
-        <nav className={navbarClass}>
-            <Link to="/">{BRAND_NAME}</Link>
-            <ul className="nav-links">
-                {navLinks.map((link, index) => (
-                    <li key={index}>
-                        <Link to={link.path}>{link.label}</Link>
-                    </li>
-                ))}
-            </ul>
-            <button onClick={toggleTheme} className="theme-btn">
-                {darkMode ? "Light Mode" : "Dark Mode"}
-            </button>
-        </nav>
-    );
+const styles = {
+  navbar: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 20px",
+    backgroundColor: "#222",
+    color: "#fff",
+  },
+  logo: { margin: 0 },
+  links: { display: "flex", gap: "15px" },
+  link: { color: "#fff", textDecoration: "none" },
 };
 
 export default Navbar;

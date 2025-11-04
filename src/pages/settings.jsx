@@ -8,7 +8,9 @@ const [phone, setPhone] = useState('Hidden for privacy');
 const [newEmail, setNewEmail] = useState('');
     const [message, setMessage] = useState('');
     const [aboutText] = useState(
-        `Avradav Revival is a Christian platform built to help people overcome sin, share testimonies, and connect with others in faith through videos, blogs, and uplifting content And a  place of fun 
+        `Avradav Revival is a Christian platform built to help people overcome sin,
+         share testimonies, and connect with others in faith through videos, blogs,
+          and uplifting content And a  place of fun 
         chat are safe and secure they are encrypted and data saving.`
     );
 

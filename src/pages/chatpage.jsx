@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { db, auth } from '../firebase';
+import { db, auth } from '../component/firebase';
 import { collection, addDoc, query, orderBy, onSnapshot, serverTimestamp } from 'firebase/firestore';
 import { encryptText, decryptText } from '../utils/encryption';
 
